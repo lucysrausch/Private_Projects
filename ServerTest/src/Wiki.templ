@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Hitler search</title>
+</head>
+<body>
+<?=$message?>
+<br></br>
+<p>This tool calculates to required amount of steps to get to Hitlers Wiki page! </p>
+<p>If the search takes to long, change the count to 1.</p>
+<br></br>
+<form action="/wikisearch" method="get" enctype="text/plain">
+
+<input size="70" name="url" value="Wiki URL">
+<input size="10" name="count" value="1">
+ <button>Search</button>
+
+<br></br>
+<b>Results:</b>
+<br></br>
+<?=$result1?>
+<br></br>
+<?=$result2?>
+<br></br>
+<?=$result3?>
+<br></br>
+<?=$result4?>
+<br></br>
+<?=$result5?>
+
+</form>
+</body>
+</html>

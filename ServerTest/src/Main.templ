@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>Hallo Welt</title>
+</head>
+<body>
+<?=$message?>
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="http://code.highcharts.com/modules/exporting.js"></script>
+<script>
+$(function () {
+    $('#container').highcharts({
+        chart: {
+            type: 'spline',
+            zoomType: 'x'
+            },
+        title: {
+            text: '"Random" Numbers'
+        },
+        subtitle: {
+            text: 'Click and drag in the plot area to zoom in...'
+        },
+        xAxis: {
+            type: 'datetime',
+            dateTimeLabelFormats: { // don't display the dummy year
+            	hour: '%I %p',
+                minute: '%I:%M %p',
+                month: '%e. %b',
+                year: '%b'
+            },
+            title: {
+                text: 'Date'
+            }
+        },
+        yAxis: {
+            title: {
+                text: 'Value'
+            },
+            min: 0
+        },
+        tooltip: {
+            headerFormat: '<b>{series.name}</b><br>',
+            pointFormat: '{point.x:%e. %b %I:%M %p}: {point.y:.2f} m'
+        },
+
+        plotOptions: {
+            spline: {
+                marker: {
+                    enabled: true
+                }
+            }
+        },
+
+        series: <?=$!seriesdata?>
+    });
+});
+</script>
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+</body>
+</html>
