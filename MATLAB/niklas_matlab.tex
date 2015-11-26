@@ -20,7 +20,10 @@
 %% Unter Linux [utf8] verwenden.
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage{textcomp}
 \usepackage[ngerman]{babel}
+
+\setlength{\parindent}{0pt}
  
 \usepackage{listings}
 \usepackage{color}
@@ -147,7 +150,6 @@ Durch Eingabe des Befehls >help UDot< erscheint folgende Hilfe:
 
 
 
-
   \section{UInt}
   \subsection{Erklärung}
 
@@ -183,7 +185,8 @@ Durch Eingabe des Befehls >help UInt< erscheint folgende Hilfe:
   \section{Anwendung}
   \subsection{Ableiten}
 
-bla bla bla
+Um die Funktionen zu testen soll eine Sinusschwingung mit einer Amplitude von 1 und einer Frequenz von 1Hz abgeleitet werden.
+Dazu wird die UDot Funktion verwendet.
 
 \begin{figure}[h]
 \includegraphics[width=\textwidth]{plot1.png}
@@ -199,7 +202,8 @@ Dazu wurden folgende Befehle verwendet:
 
  \subsection{Ableiten und Integrieren}
 
-bla bla bla
+Nun soll die Sinusfunktion abgeleitet und anschließend wieder integriert werden.
+
 
 \begin{figure}[h]
 \includegraphics[width=\textwidth]{plot2.png}
@@ -213,6 +217,97 @@ Dazu wurden folgende Befehle verwendet:
 
 \newpage
 
+\subsection{Erklärung des Amplitudenunterschiedes}
+
+Betrachtet man den Graphen der Ableitung der Sinusfunktion, so fällt auf, dass diese um -90° Phasenverschoben ist, sich aber auch die Amplitude geändert hat.
+Dies wird ersichtlicher, wenn man die Ausgangsfunktion analytisch ableitet.
+Die Ausgangsfunktion lautet
+
+
+\begin{equation}
+U(t) = sin(2\pi*t)
+\end{equation}
+
+Die Ableitungsfunktion lautet demnach
+
+\begin{equation}
+UDot(t) = \frac{dt}{dU}( sin(2\pi*t))
+\end{equation}
+
+Gemäß der Kettenregel ergibt sich
+
+
+\begin{equation}
+UDot(t) =  \frac{dt}{dU}(2\pi*t)*cos(2\pi*t)
+\end{equation}
+
+Die Ableitung von t ist 1
+
+\begin{equation}
+UDot(t) =  2\pi*cos(2\pi*t)
+\end{equation}
+
+Jetzt wird auch ersichtlich, wie es zu dem Amplitudenunterschied kommt. Durch die Ableitung kam der Faktor 2 $\pi$ dazu.
+Die Phasenverschiebung lässt sich durch die \\ Kosinusfunktion erklären.
+
+  \section{Simulation}
+  \subsection{Erklärung}
+
+Nachdem überprüft wurde, ob sich die beiden Funktionen korrekt verhalten, können diese nun zur Simulation zeitabhängiger Schaltungen, z.B. mit Kondensatoren oder Spulen,
+verwendet werden. Nachfolgend soll beispielsweise der Stromverlauf eines 500µF Kondensators bzw einer 500mH Spule  bei einem Spannungssprung simuliert werden. 
+\newpage
+\subsection{Quellcode}
+
+Zum Erzeugen der beiden Plots wurde folgendes Skript verwendet
+ 
+\lstinputlisting[language=Matlab]{Aufgabe2A1.m}
+
+\newpage
+\subsection{Kondensator}
+
+Um zu simulieren, wie sich ein 500µF Kondensator bei schneller Spannungsänderung verhält, kann die UDot Funktion genutzt werden.
+
+\begin{figure}[h]
+\includegraphics[width=\textwidth]{plot3.png}
+\caption{Verhalten eines Kondensators bei Spannungsänderung}
+\label{fig5}
+\end{figure}
+
+\newpage
+
+\subsection{Spule}
+
+Während beim Kondensator bereits die Gleichung zur Berechnung des Stroms gegeben ist, muss diese für die Spule zunächst umgestellt werden.
+\begin{equation}
+U(t) =  L*\frac{dI(t)}{dt}
+\end{equation}
+\\
+Dazu muss zunächst die Differentialgleichung dI(t) / dt gelöst werden
+
+\begin{equation}
+\frac{dI(t)}{dt} = \frac{U(t)}{L}
+\end{equation}
+\\
+nun müssen beide Seiten nach t integriert werden
+
+\begin{equation}
+I(t) = \int \frac{U(t)}{L} dt = \frac{\int U(t) dt}{L}
+\end{equation}
+\\
+Zum Integrieren kann die Funktion UInt(t, U) genutzt werde.
+In Matlab ergibt sich daraus:
+\begin{equation}
+UInt(t, U)  /  L
+\end{equation}
+\\
+Als Plot sieht das für unser Beispiel so aus
+
+
+\begin{figure}[h]
+\includegraphics[width=\textwidth]{plot4.png}
+\caption{Verhalten einer Spule bei Spannungsänderung}
+\label{fig5}
+\end{figure}
 
 
 \end{document}
