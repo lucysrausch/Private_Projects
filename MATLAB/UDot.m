@@ -9,13 +9,15 @@ function UDot = UDot(t, U)
 %              Als Rueckgabewert liefert diese Funktion
 %              einen Vektor mit den Ableitungswerten.
 
-if (length(t) ~= length(U))
-    vectorLength = min([length(t) length(U)]);
-    if (vectorLength == length(t))
-        vectorName = 'time';     
+if (length(t) ~= length(U)) %Check if vectors are of the same lenght
+    vectorLength = min([length(t) length(U)]); %if not, use the shorter one
+    if (vectorLength == length(t))     
+        vectorName = 'time';        
     else
         vectorName = 'input';
     end
+    
+    %display a warning including the name of the used vector
     warning('The input vectors of UDot do not have the same length. The %s vector will be used.', vectorName);
 else
     vectorLength = length(t);
@@ -40,6 +42,5 @@ for i = 1 : vectorLength  % Calculate the derivation.
         UDot(i) = dU/dt;
     end
 end
-
 end
 
