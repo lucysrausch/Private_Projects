@@ -30,7 +30,7 @@ for i = 1 : vectorLength  % Calculate the derivation.
     
     % Check for last value in vector.
     if (i == vectorLength)
-        UDot(i-1) = UDot(i);
+        UDot(i) = UDot(i - 1);
     else
         % Difference between two time values.
         dt = t(i+1) - t(i);
