@@ -9,3 +9,5 @@ end
 plot(t, U, t, UInt(t, UDot(t, U)), '--', 'LineWidth', 2);
 set(gca, 'FontSize', 15);
 xlabel('Zeit in s');
+title('Aufgabe 2');
+legend('U(t)', 'UInt(t, UDot(t, U))');
