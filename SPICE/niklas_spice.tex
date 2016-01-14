@@ -188,8 +188,47 @@ und der Strom $I_{last}$ in Phase sind. Da hier die Impedanz vollständig reel i
 
 Natürlich kann die Frequenz nicht negativ sein. Die praktisch relevante Freqnez beträgt demnach f = 72,934Hz.
 
+\clearpage
 
 
+\subsection{Aufgabenteil c}
+
+Wenn Strom und Spannung in Phase sind ist der Imaginärteil null und der Realteil maximal. 
+Es ergibt sich für f = +/- 72,934Hz Z = 270 Ohm
+
+\begin{equation}
+Z_{50Hz}=R_{Last}+\frac{(R+458,258*j L)\frac{1}{458,258*j C}}{R+458,258*j L+\frac{1}{458,258*j C}} = 270
+\end{equation}
+
+Für $\omega$ = 100 * $\pi$ (50 Hz) ergibt sich:
+
+\begin{equation}
+Z_{50Hz}=R_{Last}+\frac{(R+100*j\pi L)\frac{1}{100*j\pi C}}{R+100*j\pi L+\frac{1}{100*j\pi C}} = 113,142 + 65,1383 j
+\end{equation}
+
+
+\subsection{Aufgabenteil d}
+Nun sollte auch diese Schaltung in LTSpice simuliert werden.
+
+\begin{figure}[h]
+\includegraphics[width=\textwidth]{schematic3.png}
+\caption{Schaltung 2}
+\label{fig7}
+\end{figure}
+
+\clearpage
+
+\begin{figure}[h]
+\includegraphics[width=\textwidth]{plot2.png}
+\caption{Ortskurve der Impedanz}
+\label{fig8}
+\end{figure}
+
+\begin{figure}[h]
+\includegraphics[width=\textwidth]{plot3.png}
+\caption{Ortskurve der Admittanz}
+\label{fig9}
+\end{figure}
 
 
 
