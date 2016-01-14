@@ -1,0 +1,10 @@
+\select@language {ngerman}
+\contentsline {section}{\numberline {1}Aufgabe}{4}
+\contentsline {subsection}{\numberline {1.1}Aufgabenteil a}{4}
+\contentsline {subsection}{\numberline {1.2}Aufgabenteil b}{4}
+\contentsline {subsection}{\numberline {1.3}Aufgabenteil c}{4}
+\contentsline {subsection}{\numberline {1.4}Aufgabenteil d}{5}
+\contentsline {subsection}{\numberline {1.5}Aufgabenteil e}{6}
+\contentsline {section}{\numberline {2}Aufgabe}{7}
+\contentsline {subsection}{\numberline {2.1}Aufgabenteil a}{7}
+\contentsline {subsection}{\numberline {2.2}Aufgabenteil b}{8}

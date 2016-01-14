@@ -31,6 +31,10 @@
 \usepackage{graphicx}
 \usepackage{color}
 
+
+\setlength{\parindent}{0pt}
+ \usepackage{url}
+
 % Mathematische Formeln
 \usepackage{amsmath}
 
@@ -64,7 +68,15 @@
 \begingroup
 \let\cleardoublepage\clearpage
 \tableofcontents
+
 \endgroup
+\bigskip 
+Diese Dokumentation sowie dazugehörige Grafiken und Quellcode kann unter
+\bigskip 
+\\
+\url{https://github.com/NiklasFauth/Private_Projects/tree/master/SPICE}
+\bigskip 
+\\abgerufen werden.
 \clearpage
   
   %% Hier kannst du jetzt Deinen Lösungstext schrieben.
@@ -159,14 +171,22 @@ Mit Wolfram|Alpha  kann nun der Real- und Imaginärteil bestimmt werden. (r = $R
 \begin{figure}[h]
 \includegraphics[width=\textwidth]{wolfram2.png}
 \caption{Imaginärteil}
-\label{fig3}
+\label{fig4}
 \end{figure}
 
 \clearpage
 
+\subsection{Aufgabenteil b}
+Nun sollen die Frequenzen bestimmt werden, bei denen die Eingangsspannung Ue
+und der Strom $I_{last}$ in Phase sind. Da hier die Impedanz vollständig reel ist, können die Nullstellen der Imaginärteils gesucht werden.
 
+\begin{figure}[h]
+\includegraphics[width=\textwidth]{wolfram3.png}
+\caption{Lösung mit Wolfram|Alpha}
+\label{fig5}
+\end{figure}
 
-
+Natürlich kann die Frequenz nicht negativ sein. Die praktisch relevante Freqnez beträgt demnach f = 72,934Hz.
 
 
 

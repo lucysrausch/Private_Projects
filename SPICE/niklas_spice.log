@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.9.9)  14 JAN 2016 21:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.9.9)  14 JAN 2016 21:48
 entering extended mode
 **"E:/Studium/1. Semester/LEN/SPICE/niklas_spice.tex"
 ("E:/Studium/1. Semester/LEN/SPICE/niklas_spice.tex"
@@ -403,6 +403,9 @@ Package: color 2014/10/28 v1.1a Standard LaTeX Color (DPC)
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 142.
+) (D:\LaTeX\tex\latex\url\url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 ) (D:\LaTeX\tex\latex\amsmath\amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip48
@@ -438,7 +441,7 @@ LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \macc@depth=\count103
 \c@MaxMatrixCols=\count104
-\dotsspace@=\muskip10
+\dotsspace@=\muskip11
 \c@parentequation=\count105
 \dspbrk@lvl=\count106
 \tag@help=\toks19
@@ -480,23 +483,19 @@ Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 LaTeX Warning: Unused global option(s):
     [article].
 
-(niklas_spice.aux
-
-LaTeX Warning: Label `fig3' multiply defined.
-
-)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
+(niklas_spice.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
 \c@lstlisting=\count111
  (D:\LaTeX\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -512,11 +511,11 @@ LaTeX Font Info:    ... okay on input line 59.
 \makeMPintoPDFobject=\count117
 \everyMPtoPDFconversion=\toks26
 )
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 62.
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 66.
  (D:\LaTeX\tex\latex\base\t1cmss.fd
 File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-Overfull \hbox (12.0pt too wide) in paragraph at lines 62--62
+Overfull \hbox (12.0pt too wide) in paragraph at lines 66--66
  [][] 
  []
 
@@ -525,70 +524,81 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 62--62
 {C:/Users/Niklas/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
 (niklas_spice.toc)
 \tf@toc=\write3
- [3] [4
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 77.
+ (D:\LaTeX\tex\latex\base\t1cmtt.fd
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+) [3] [4
 
-] <schematic2.png, id=30, 1205.2528pt x 678.28406pt>
+]
+<schematic2.png, id=31, 1205.2528pt x 678.28406pt>
 File: schematic2.png Graphic file (type png)
-
-<use schematic2.png>
-Package pdftex.def Info: schematic2.png used on input line 120.
+ <use schematic2.png>
+Package pdftex.def Info: schematic2.png used on input line 132.
 (pdftex.def)             Requested size: 448.13095pt x 252.1928pt.
- [5
 
- <./schematic2.png>]
-<plot1.png, id=36, 1445.4pt x 694.09312pt>
+[5
+
+ <./schematic2.png>] <plot1.png, id=37, 1445.4pt x 694.09312pt>
 File: plot1.png Graphic file (type png)
- <use plot1.png>
-Package pdftex.def Info: plot1.png used on input line 128.
+
+<use plot1.png>
+Package pdftex.def Info: plot1.png used on input line 140.
 (pdftex.def)             Requested size: 448.13095pt x 215.19841pt.
  [6
 
  <./plot1.png>]
-<wolfram1.png, id=41, 526.96875pt x 193.47281pt>
+<wolfram1.png, id=42, 526.96875pt x 193.47281pt>
 File: wolfram1.png Graphic file (type png)
  <use wolfram1.png>
-Package pdftex.def Info: wolfram1.png used on input line 154.
+Package pdftex.def Info: wolfram1.png used on input line 166.
 (pdftex.def)             Requested size: 448.13095pt x 164.53532pt.
 
-<wolfram2.png, id=42, 523.9575pt x 194.22563pt>
+<wolfram2.png, id=43, 523.9575pt x 194.22563pt>
 File: wolfram2.png Graphic file (type png)
  <use wolfram2.png>
-Package pdftex.def Info: wolfram2.png used on input line 160.
+Package pdftex.def Info: wolfram2.png used on input line 172.
 (pdftex.def)             Requested size: 448.13095pt x 166.12093pt.
  [7
 
- <./wolfram1.png> <./wolfram2.png>] (niklas_spice.aux)
+ <./wolfram1.png> <./wolfram2.png>] <wolfram3.png, id=50, 523.20468pt x 498.361
+88pt>
+File: wolfram3.png Graphic file (type png)
 
-LaTeX Warning: There were multiply-defined labels.
+<use wolfram3.png>
+Package pdftex.def Info: wolfram3.png used on input line 184.
+(pdftex.def)             Requested size: 448.13095pt x 426.86427pt.
+ [8
 
- ) 
+ <./wolfram3.png>] (niklas_spice.aux) ) 
 Here is how much of TeX's memory you used:
- 5744 strings out of 493673
- 79798 string characters out of 3151679
+ 5850 strings out of 493673
+ 81390 string characters out of 3151679
  222012 words of memory out of 3000000
- 9008 multiletter control sequences out of 15000+200000
- 18196 words of font info for 43 fonts, out of 3000000 for 9000
+ 9105 multiletter control sequences out of 15000+200000
+ 18509 words of font info for 44 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 43i,15n,50p,497b,402s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Niklas\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600
-\ecsx1440.pk> <C:\Users\Niklas\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappe
-n\ec\dpi600\ecsx1200.pk> <C:\Users\Niklas\AppData\Local\MiKTeX\2.9\fonts\pk\ljf
-our\jknappen\ec\dpi600\ecsx1728.pk> <C:\Users\Niklas\AppData\Local\MiKTeX\2.9\f
-onts\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk> <C:\Users\Niklas\AppData\Local\M
-iKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\Niklas\AppD
-ata\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx2488.pk> <C:\Users\
-Niklas\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk>
- <C:\Users\Niklas\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\e
-crm0800.pk> <C:\Users\Niklas\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
-ec\dpi600\ecrm1200.pk> <C:\Users\Niklas\AppData\Local\MiKTeX\2.9\fonts\pk\ljfou
-r\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\Niklas\AppData\Local\MiKTeX\2.9\fon
-ts\pk\ljfour\jknappen\ec\dpi600\ecrm1440.pk><D:/LaTeX/fonts/type1/public/amsfon
-ts/cm/cmmi12.pfb><D:/LaTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/LaTeX/f
-onts/type1/public/amsfonts/cm/cmr12.pfb><D:/LaTeX/fonts/type1/public/amsfonts/c
-m/cmr8.pfb><D:/LaTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on niklas_spice.pdf (7 pages, 267428 bytes).
+ 43i,15n,50p,497b,400s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Niklas\AppData\Local\MiKTeX\2
+.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx1440.pk> <C:\Users\Niklas\AppData\Loc
+al\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1200.pk> <C:\Users\Niklas\
+AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx1200.pk> <C:\Us
+ers\Niklas\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx1728
+.pk> <C:\Users\Niklas\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi6
+00\ecrm1095.pk> <C:\Users\Niklas\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknap
+pen\ec\dpi600\ecbx1200.pk> <C:\Users\Niklas\AppData\Local\MiKTeX\2.9\fonts\pk\l
+jfour\jknappen\ec\dpi600\ecsx2488.pk> <C:\Users\Niklas\AppData\Local\MiKTeX\2.9
+\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk> <C:\Users\Niklas\AppData\Local
+\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk> <C:\Users\Niklas\Ap
+pData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\User
+s\Niklas\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.p
+k> <C:\Users\Niklas\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600
+\ecrm1440.pk><D:/LaTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/LaTeX/font
+s/type1/public/amsfonts/cm/cmmi8.pfb><D:/LaTeX/fonts/type1/public/amsfonts/cm/c
+mr12.pfb><D:/LaTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/LaTeX/fonts/type
+1/public/amsfonts/cm/cmsy10.pfb>
+Output written on niklas_spice.pdf (8 pages, 330692 bytes).
 PDF statistics:
- 360 PDF objects out of 1000 (max. 8388607)
+ 400 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
