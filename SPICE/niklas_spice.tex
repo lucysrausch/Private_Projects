@@ -30,7 +30,7 @@
 % Bilder und Farbe
 \usepackage{graphicx}
 \usepackage{color}
-
+\usepackage{float}
 
 \setlength{\parindent}{0pt}
  \usepackage{url}
@@ -186,7 +186,7 @@ und der Strom $I_{last}$ in Phase sind. Da hier die Impedanz vollständig reel i
 \label{fig5}
 \end{figure}
 
-Natürlich kann die Frequenz nicht negativ sein. Die praktisch relevante Freqnez beträgt demnach f = 72,934Hz.
+Natürlich kann die Frequenz nicht negativ sein. Die praktisch relevanten Frequenzen betragen demnach f = 72,934Hz und f = 0Hz.
 
 \clearpage
 
@@ -196,7 +196,13 @@ Natürlich kann die Frequenz nicht negativ sein. Die praktisch relevante Freqnez
 Es ergibt sich für f = +/- 72,934Hz Z = 270 Ohm
 
 \begin{equation}
-Z_{50Hz}=R_{Last}+\frac{(R+458,258*j L)\frac{1}{458,258*j C}}{R+458,258*j L+\frac{1}{458,258*j C}} = 270
+Z_{73Hz}=R_{Last}+\frac{(R+458,258*j L)\frac{1}{458,258*j C}}{R+458,258*j L+\frac{1}{458,258*j C}} = 270
+\end{equation}
+
+Es ergibt sich für $\omega$ = 0 (0 Hz) Z = 60 Ohm
+
+\begin{equation}
+Z_{0Hz}=R_{Last}+R = 60
 \end{equation}
 
 Für $\omega$ = 100 * $\pi$ (50 Hz) ergibt sich:
@@ -223,7 +229,14 @@ Nun sollte auch diese Schaltung in LTSpice simuliert werden.
 \label{fig8}
 \end{figure}
 
-\begin{figure}[h]
+\begin{tabular}{ll}
+Impedanz in Ohm& Admittanz in Siemens\\
+60  & 0,0166  \\
+113,142 + 65,1383 j & 0,006638 - 0,0038 j  \\
+120  & 0,00833  \\
+\end{tabular}
+
+\begin{figure}[H]
 \includegraphics[width=\textwidth]{plot3.png}
 \caption{Ortskurve der Admittanz}
 \label{fig9}
